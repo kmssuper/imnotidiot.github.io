@@ -1,115 +1,138 @@
-# foridiot
-
-깃허브 페이지를 이용해 웹사이트를 만들어보았습니다.
-
-<!DOCTYPE i think u are idiot>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>멍청한녀석 여길봤구나</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			font-family: 'Montserrat', sans-serif;
-			background-color: #f1f1f1;
-		}
-		header {
-			background-color: #333;
-			color: #fff;
-			padding: 20px;
-			text-align: center;
-		}
-		h1 {
-			margin: 0;
-			font-size: 36px;
-			font-weight: 700;
-			text-transform: uppercase;
-		}
-		nav {
-			display: flex;
-			justify-content: center;
-			margin-top: 20px;
-		}
-		nav ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-		}
-		nav li {
-			margin: 0 10px;
-		}
-		nav a {
-			color: #fff;
-			text-decoration: none;
-			font-size: 18px;
-			font-weight: 400;
-			text-transform: uppercase;
-			padding: 10px;
-			transition: all 0.3s ease;
-		}
-		nav a:hover {
-			background-color: #fff;
-			color: #333;
-		}
-		main {
-			max-width: 1200px;
-			margin: 0 auto;
-			padding: 50px 20px;
-		}
-		h2 {
-			font-size: 24px;
-			font-weight: 700;
-			margin-bottom: 20px;
-		}
-		p {
-			font-size: 18px;
-			line-height: 1.5;
-			margin-bottom: 20px;
-		}
-		img {
-			max-width: 100%;
-			height: auto;
-			margin-bottom: 20px;
-		}
-		section {
-			margin-bottom: 50px;
-		}
-		footer {
-			background-color: #333;
-			color: #fff;
-			text-align: center;
-			padding: 20px;
-			font-size: 16px;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zip</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="1.js">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .section {
+            padding: 40px 0;
+        }
+        .section1,
+        .section2 {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0px;
+            text-align: right;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+        }
+        .hidden-button {
+            display: none;
+            font-weight: bolder;
+            font-size: 40px;
+            margin-bottom: 55px;
+            margin-left: 125px
+        }
+        .toggle {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            border: none; 
+        }
+        .logo-beta {
+            display: inline-block;
+            padding: 1px 3px;
+            
+            margin-left: -20px;
+            margin-top: -70px;
+            font-size: 25px;
+            font-weight: 400;
+            color: #aaa;
+            line-height: 12px;
+            vertical-align: middle;
+        }
+        .display {
+            margin-left: 75px;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-	<header>
-		<h1>psj</h1>
-		<nav>
-			<ul>
-				<li><a href="https://www.google.com/search?q=%EA%B1%B0%EB%B6%81%EC%9D%B4&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiVu5DHtZL-AhUSCd4KHTANCz0Q_AUoAXoECAEQAw&biw=1920&bih=966#imgrc=07TSmKizYF_IwM">엿거북이.</a></li>
-				<li><a href="">거북이님입니다.</a></li>
-				<li><a href="https://www.youtube.com/">유튜브님입니다.</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section id="about">
-			<h2>About Me</h2>
-			<p>Insert your bio and experience here.</p>
-		</section>
-		<section id="projects">
-			<h2>My Projects</h2>
-			<div class="project">
-				<h3>Project Title</h3>
-				<img src="" alt="#C:\Users\user\Desktop\sss.turtle">
-				<p>Project description here.</p>
-				<a href="#" target="_blank">View Project</a>
-			</div>
-			<div class="project">
-				<h3>Project Title</h3>
-				<img src="
+
+    <header>
+        <h1 class="display-3">
+            <span class="display">Game Zip</span>
+        <small class="logo-beta">BETA</small>
+        </h1>
+        
+        
+        <p class="lead">최신 게임 소식과 인기 게임을 만나보세요.</p>
+    </header>
+
+    <section class="section1">
+        <h2 class="display-4">테트리스</h2>
+        <p class="lead">인기를 끌고 있는 최신 게임에 대한 소개입니다.</p>
+        <img src="game_image.jpg" alt="게임 이미지">
+    </section>
+
+    <section class="section2">
+        <h2 class="display-4">블록 부수기</h2>
+        <p class="lead">인기를 끌고 있는 최신 게임에 대한 소개입니다.</p>
+        <img src="game_image.jpg" alt="게임 이미지">
+    </section>
+    
+     <button class="hidden-button" id="targetButton">Hidden Game</button>
+    <footer>
+        <button class="toggle" onclick="toggleButton()">🇹🇲 김민수, 김준우, 박세진</button>
+    </footer>
+
+    <script>
+        function toggleButton() {
+            var targetButton = document.getElementById('targetButton');
+            
+            if (targetButton.style.display === 'none'|| targetButton.style.display === '') {
+                targetButton.style.display = 'block';
+            } else {
+                targetButton.style.display = 'none';
+            }
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
